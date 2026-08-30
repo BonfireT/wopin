@@ -15,6 +15,22 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "WOPIN",
   description: "Women of Purpose International Network (W.O.P.I.N)",
+  openGraph: {
+    title: "WOPIN",
+    description: "Women of Purpose International Network (W.O.P.I.N)",
+    url: "https://wopin-wheat.vercel.app",
+    siteName: "WOPIN",
+    images: [
+      {
+        url: "/header2",
+        width: 1200,
+        height: 630,
+        alt: "WOPIN Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

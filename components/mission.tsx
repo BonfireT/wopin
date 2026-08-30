@@ -28,12 +28,12 @@ const Mission = () => {
         </a>
 
         <p className="text-2xl text-gray-800 sm:text-3xl">
-          Book your free ticket to our 2026, Liquid Fire Conference
+          Book your free ticket to our 2027, Liquid Fire Conference
         </p>
 
         {/* Conference title */}
         <h3 className="text-3xl font-extrabold text-[#8B0000] sm:text-4xl">
-          Lagos Liquid Fire Conference 2026
+          Lagos Liquid Fire Conference 2027
         </h3>
       </div>
 

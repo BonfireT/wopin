@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "WOPIN",
     images: [
       {
-        url: "/header2",
+        url: "/header2.jpg",
         width: 1200,
         height: 630,
         alt: "WOPIN Logo",

@@ -1,11 +1,11 @@
 const Mission = () => {
   return (
-    <section className="flex flex-col items-center bg-zinc-50 px-6 py-12 text-center dark:bg-black">
+    <section className="flex flex-col items-center bg-zinc-50 px-12 py-12 text-center dark:bg-black">
       {/* Top divider */}
       <div className="mb-8 h-px w-24 bg-gray-300" />
 
       {/* Heading */}
-      <h2 className="text-3xl font-extrabold leading-tight text-[#8B0000] sm:text-4xl md:text-5xl">
+      <h2 className="text-3xl font-extrabold leading-tight text-[#8B0000] sm:text-4xl md:text-5xl px-8">
         Welcome to Women of Purpose International Network (W.O.P.I.N)
       </h2>
 
@@ -21,7 +21,9 @@ const Mission = () => {
       {/* Ticket CTA */}
       <div className="mt-8 flex flex-col items-center gap-4">
         
-          <a href="/tickets"
+          <a href="https://www.eventbrite.com/e/women-of-purpose-international-network-liquid-fire-conference-2027-tickets-1556733685359"
+          target="_blank"
+          rel="noopener noreferrer"
           className="rounded border border-gray-400 px-4 py-1 text-sm text-gray-700 transition-colors hover:bg-gray-100"
         >
           Buy Tickets

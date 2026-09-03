@@ -88,13 +88,9 @@ const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="mx-auto flex max-w-5xl flex-col items-start justify-between gap-2 px-6 pb-8 text-xs text-gray-600 sm:flex-row sm:items-center">
-          <p>© 2026 Women of Purpose International Network</p>
-          <p>
-            Proudly powered by{" "}
-            <span className="font-semibold underline">Undecided</span>
-          </p>
-        </div>
+<div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-2 px-6 pb-8 text-xs text-gray-600 sm:flex-row sm:items-end sm:justify-end sm:text-right">
+  <p>© 2026 Women of Purpose International Network</p>
+</div>
       </div>
     </footer>
   );

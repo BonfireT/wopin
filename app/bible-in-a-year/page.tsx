@@ -40,80 +40,45 @@ export default function BibleInAYear() {
       </section>
 
       {/* Reading plans + prayer section */}
-      <section className="w-full bg-white px-6 py-12">
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-10 sm:grid-cols-3">
-          {/* Column 1: 52 weeks */}
-          <div className="flex flex-col items-center text-center">
-            <div className="relative h-40 w-full max-w-xs overflow-hidden rounded">
-              <Image
-                src="/reading-52-weeks-photo.jpg"
-                alt="Reading the Bible in the morning"
-                fill
-                sizes="(max-width: 640px) 100vw, 320px"
-                className="object-cover"
-              />
-            </div>
-
-            <h3 className="mt-4 text-lg font-bold text-gray-900">
-              Read through the bible in 52 weeks
-            </h3>
-
-            
-              <a href="/pdfs/bible-in-52-weeks.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 text-sm text-gray-500 hover:text-orange-600"
-            >
-              Download Bible in 52 weeks
-            </a>
-
-            <div className="relative mt-4 h-64 w-full max-w-xs overflow-hidden rounded border border-gray-300">
-              <Image
-                src="/reading-52-weeks-plan.jpg"
-                alt="52 week Bible reading plan preview"
-                fill
-                sizes="(max-width: 640px) 100vw, 320px"
-                className="object-cover"
-              />
-            </div>
-          </div>
-
-          {/* Column 2: 90 days */}
+      <section className="w-full bg-[#f5ede4] px-6 py-12">
+        <div className="mx-auto grid max-w-4xl grid-cols-1 gap-10 sm:grid-cols-2">
+          {/* Column 1: Reading plan PDFs */}
           <div className="flex flex-col items-center text-center">
             <h3 className="text-lg font-bold text-gray-900">
-              Read through the bible in 90 days
+              Bible Reading Plans
             </h3>
 
-            
-              <a href="/download-bible-in-a-year"
-              className="mt-2 text-sm font-semibold text-blue-700 underline hover:text-orange-600"
-            >
-              Download Bible In A Year
-            </a>
-            <p className="text-sm text-gray-500">Bible in 90 days</p>
+            <div className="mt-6 flex flex-col gap-4">
+              
+                <a href="/pdf/bible-in-52-weeks.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded border border-gray-400 px-4 py-2 text-sm font-semibold text-gray-800 transition-colors hover:bg-gray-100"
+              >
+                Download: Bible in 52 Weeks
+              </a>
 
-            <div className="relative mt-4 h-80 w-full max-w-xs overflow-hidden rounded border border-gray-300">
-              <Image
-                src="/reading-90-days-plan.jpg"
-                alt="90 day Bible reading plan preview"
-                fill
-                sizes="(max-width: 640px) 100vw, 320px"
-                className="object-cover"
-              />
+              
+                <a href="/pdf/bible-in-90-days.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded border border-gray-400 px-4 py-2 text-sm font-semibold text-gray-800 transition-colors hover:bg-gray-100"
+              >
+                Download: Bible in 90 Days
+              </a>
+
+              
+                <a href="/pdf/navigators-bible-reading-plan.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded border border-gray-400 px-4 py-2 text-sm font-semibold text-gray-800 transition-colors hover:bg-gray-100"
+              >
+                Download: Navigators Bible Reading Plan
+              </a>
             </div>
-
-            
-              <a href="/pdfs/bible-in-90-days.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 inline-block rounded bg-red-600 p-1 text-white"
-              aria-label="Download 90 day Bible reading plan PDF"
-            >
-              PDF
-            </a>
           </div>
 
-          {/* Column 3: Prayer */}
+          {/* Column 2: Prayer */}
           <div className="flex flex-col items-center text-center">
             <h3 className="text-lg font-bold text-gray-900">
               We rule through prayer
@@ -121,11 +86,11 @@ export default function BibleInAYear() {
 
             <div className="relative mt-4 h-56 w-full max-w-xs overflow-hidden rounded">
               <Image
-                src="/prayer-1.jpg"
+                src="/pray.jpg"
                 alt="Woman praying"
                 fill
                 sizes="(max-width: 640px) 100vw, 320px"
-                className="object-cover"
+                className="object-contain"
               />
             </div>
 
@@ -139,7 +104,7 @@ export default function BibleInAYear() {
 
             <div className="relative mt-4 h-56 w-full max-w-xs overflow-hidden rounded">
               <Image
-                src="/prayer-2.jpg"
+                src="/rev.jpg"
                 alt="Rev Stella Ebegbuna ministering with a microphone"
                 fill
                 sizes="(max-width: 640px) 100vw, 320px"

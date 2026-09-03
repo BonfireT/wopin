@@ -41,8 +41,10 @@ export default function Conference() {
         </p>
 
         
-         <a href="/tickets"
-          className="mt-4 rounded border border-gray-400 px-4 py-1 text-sm text-gray-700 transition-colors hover:bg-gray-100"
+         <a href="https://www.eventbrite.com/e/women-of-purpose-international-network-liquid-fire-conference-2027-tickets-1556733685359"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded border border-gray-400 px-4 py-1 text-sm text-gray-700 transition-colors hover:bg-gray-100"
         >
           Buy Tickets
         </a>

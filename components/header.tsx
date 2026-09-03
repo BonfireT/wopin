@@ -1,6 +1,5 @@
 "use client"
 import { useState } from "react";
-import { Search } from "lucide-react";
 import Link from "next/link";
 
 const Header = () => {
@@ -29,19 +28,14 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full border-b border-gray-200 bg-white">
+    <header className="w-full sticky top-0 z-50 border-b border-gray-200 bg-white">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center">
           <img src="/header2.jpg" alt="WOPIN Logo" className="h-10 w-auto" />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
-          <Link
-            href="/"
-            className="text-sm font-medium text-gray-800 transition-colors hover:text-orange-600"
-          >
-            Home
-          </Link>
+          
 
           <div
             className="relative"
@@ -158,9 +152,6 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center gap-4">
-          <button aria-label="Search" className="text-gray-700 hover:text-orange-600">
-            <Search size={20} />
-          </button>
 
           <button
             className="md:hidden text-gray-700"
@@ -174,10 +165,7 @@ const Header = () => {
 
       {menuOpen && (
         <nav className="flex flex-col gap-1 border-t border-gray-200 px-6 py-4 md:hidden">
-          <Link href="/" className="py-2 text-sm font-medium text-gray-800 hover:text-orange-600">
-            Home
-          </Link>
-
+    
           <button
             onClick={() => setAboutOpen(!aboutOpen)}
             className="flex items-center justify-between py-2 text-left text-sm font-medium text-gray-800"

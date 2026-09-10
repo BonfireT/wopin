@@ -1,5 +1,14 @@
-"use client"
+"use client";
+
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Hero = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800, once: true });
+  }, []);
+
   return (
     <section className="relative w-full">
       <img
@@ -15,7 +24,10 @@ const Hero = () => {
 
       {/* Overlay text */}
       <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
-        <h1 className="font-serif text-3xl font-extrabold uppercase leading-tight tracking-wide text-[#8B4513] [text-shadow:_2px_2px_8px_rgb(255_255_255_/_60%)] sm:text-4xl md:text-5xl lg:text-6xl">
+        <h1
+          data-aos="fade-up"
+          className="font-serif text-3xl font-extrabold uppercase leading-tight tracking-wide text-[#8B4513] [text-shadow:_2px_2px_8px_rgb(255_255_255_/_60%)] sm:text-4xl md:text-5xl lg:text-6xl"
+        >
           2026: Our Year of Divine Mandate!
           <span className="mt-2 block text-2xl italic tracking-normal sm:text-3xl md:text-4xl lg:text-5xl">
             Luke 4:18-19

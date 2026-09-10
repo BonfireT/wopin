@@ -5,14 +5,20 @@ const Mentoring = () => {
     <section className="bg-white px-6 py-16 dark:bg-black">
       <div className="mx-auto flex max-w-5xl flex-col items-start gap-8 md:flex-row md:items-center md:justify-between">
         {/* Text */}
-        <p className="max-w-sm text-lg font-bold leading-snug text-gray-500">
+        <p
+          data-aos="fade-right"
+          className="max-w-sm text-lg font-bold leading-snug text-gray-500"
+        >
           Raising up a Network of Women, passionate about Jesus and
           conforming into His image and fulfilling His purpose in their
           sphere of influence (Esther 4:14b)
         </p>
 
         {/* Image */}
-        <div className="relative h-56 w-full max-w-md overflow-hidden md:h-64">
+        <div
+          data-aos="zoom-in-left"
+          className="relative h-56 w-full max-w-md overflow-hidden md:h-64"
+        >
           <Image
             src="/mentorship.jpg"
             alt="Women writing at a WOPIN mentoring event"
@@ -26,6 +32,7 @@ const Mentoring = () => {
       <div className="mx-auto mt-10 max-w-5xl">
         
           <a href="/contact-us"
+          data-aos="flip-up"
           className="inline-block rounded border border-gray-400 px-4 py-2 text-xs font-bold uppercase tracking-wide text-gray-700 transition-colors hover:bg-gray-100"
         >
           Become a Member
@@ -33,7 +40,10 @@ const Mentoring = () => {
       </div>
 
       {/* Bottom heading */}
-      <h2 className="mx-auto mt-16 max-w-5xl text-3xl font-extrabold text-gray-700 sm:text-4xl">
+      <h2
+        data-aos="fade-up-right"
+        className="mx-auto mt-16 max-w-5xl text-3xl font-extrabold text-gray-700 sm:text-4xl"
+      >
         Mentoring WOMEN is our mandate!
       </h2>
     </section>

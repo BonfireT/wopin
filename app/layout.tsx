@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import AOSInit from "@/components/AOSInit";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,13 +14,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "WOPIN",
+  title: "Women of Purpose International Network (W.O.P.I.N)",
   description: "Women of Purpose International Network (W.O.P.I.N)",
   openGraph: {
-    title: "WOPIN",
+    title: "Women of Purpose International Network (W.O.P.I.N)",
     description: "Women of Purpose International Network (W.O.P.I.N)",
     url: "https://wopin-wheat.vercel.app",
-    siteName: "WOPIN",
+    siteName: "Women of Purpose International Network (W.O.P.I.N)",
     images: [
       {
         url: "/header2.jpg",
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
+        <AOSInit />
         {children}
       </body>
     </html>
